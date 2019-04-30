@@ -3,26 +3,50 @@ spring:
     active:
     - dev
 ---
-server:
-  port: 8201
-eureka:
-  client:
-    service-url:
-      defaultZone: http://edmin:mldnjava@eureka-beta-7001.com:7001/eureka
-spring:
-  profiles: beta
-  application:
-    name: microcloud-config-client 
----
-server:
-  port: 8202
-eureka:
-  client:
-    service-url:
-      defaultZone: http://edmin:mldnjava@eureka-dev-7001.com:7001/eureka
 spring:
   profiles: dev
   application:
-    name: microcloud-config-client
+    name: microcloud-config-eureka-client
+server:
+  port: 7001
+eureka:  
+  client:
+    service-url:
+      defaultZone: http://edmindev:mldnjava@eureka-7001.com:7001/eureka
+    register-with-eureka: false 
+    fetch-registry: false
+  instance:
+    hostname: eureka-7001.com
+security:
+  basic:
+    enabled: true
+  user:
+    name: edmindev
+    password: mldnjava
+
+
+---
+spring:
+  profiles: beta
+  application:
+    name: microcloud-config-eureka-client 
+server:
+  port: 7001
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edminbeta:mldnjava@eureka-7001.com:7001/eureka
+  instance:
+    #lease-renewal-interval-in-seconds: 2 
+    #lease-expiration-duration-in-seconds: 5
+    instance-id: eureka-7001.com   
+    prefer-ip-address: true      
+security:
+  basic:
+    enabled: true
+  user:
+    name: edminbeta
+    password: mldnjava
+
       
     
