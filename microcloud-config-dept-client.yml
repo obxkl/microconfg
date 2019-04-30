@@ -10,10 +10,10 @@ eureka:
     service-url:
       defaultZone: http://edmindev:mldnjava@eureka-7001.com:7001/eureka
   instance:
-    #lease-renewal-interval-in-seconds: 2 #设置心跳的时间间隔
-    #lease-expiration-duration-in-seconds: 5 # 默认90秒 超过5秒为挂掉
-    instance-id: dept-8001.com   #在信息列表显示主机名称
-    prefer-ip-address: true        #访问路径变为ip地址
+    #lease-renewal-interval-in-seconds: 2 
+    #lease-expiration-duration-in-seconds: 5 
+    instance-id: dept-8001.com  
+    prefer-ip-address: true       
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
@@ -36,7 +36,7 @@ spring:
       max-total: 5
       max-wait-millis: 200
   application:
-    name: microcloud-config-dept-client # 实例所在主机名称
+    name: microcloud-config-dept-client 
 ---
 server:
   port: 8001
@@ -45,10 +45,10 @@ eureka:
     service-url:
       defaultZone: http://edminbeta:mldnjava@eureka-7001.com:7001/eureka
   instance:
-    #lease-renewal-interval-in-seconds: 2 #设置心跳的时间间隔
-    #lease-expiration-duration-in-seconds: 5 # 默认90秒 超过5秒为挂掉
-    instance-id: dept-8001.com   #在信息列表显示主机名称
-    prefer-ip-address: true        #访问路径变为ip地址
+    #lease-renewal-interval-in-seconds: 2 
+    #lease-expiration-duration-in-seconds: 5 
+    instance-id: dept-8001.com   
+    prefer-ip-address: true       
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
@@ -71,6 +71,5 @@ spring:
       max-total: 5
       max-wait-millis: 200
   application:
-    name: microcloud-config-dept-client # 实例所在主机名称
-      
+    name: microcloud-config-dept-client 
     
