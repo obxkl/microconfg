@@ -56,7 +56,7 @@ mybatis:
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml 
 spring:
-  profiles: dev
+  profiles: beta
   messages:
     basename: i18n/Messages,i18n/Pages
   datasource:
