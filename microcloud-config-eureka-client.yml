@@ -3,19 +3,26 @@ spring:
     active:
     - dev
 ---
-spring:
-  profiles: dev
-  application:
-    name: microcloud-config-eureka-client # 实例所在主机名称
 server:
-  port: 7001
-
----
+  port: 8201
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka-beta-7001.com:7001/eureka
 spring:
   profiles: beta
   application:
-    name: microcloud-config-eureka-client # 实例所在主机名称
+    name: microcloud-config-client 
+---
 server:
-  port: 7002
-
+  port: 8202
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:mldnjava@eureka-dev-7001.com:7001/eureka
+spring:
+  profiles: dev
+  application:
+    name: microcloud-config-client
+      
     
