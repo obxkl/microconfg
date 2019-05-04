@@ -8,7 +8,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka-beta-7001.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@eureka-config.com:7301/eureka
 spring:
   profiles: beta
   application:
@@ -19,7 +19,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://edmin:mldnjava@eureka-dev-7001.com:7001/eureka
+      defaultZone: http://edmin:mldnjava@eureka-config.com:7301/eureka
 spring:
   profiles: dev
   application:
