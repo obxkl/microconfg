@@ -29,7 +29,7 @@ spring:
     driver-class-name:  org.gjt.mm.mysql.Driver
     url: jdbc:mysql://localhost:3306/mldn8001
     username: root
-    password: '{cipher}123f11cede89feda27b62b5d4d951c95cdccd6d95b12f0cafb5a45e3b709ad03'
+    password: '{cipher}AQBW5yyn0xwU5ho0OZnMDQ/z7n8K8U2gNrjPivHdBV/Ki+QC+DzlB0mn6zDR1Raz+sfpcNrL2VzWtNPb1ts4ioqP4LmmPKM5sf+ZIUKHmNoslrSM4o6HvdhyFmoxRAsIiOXfiUxbB9FeICsIyxrcz2Go1JwElYfTX12yn5j1pZlvACl4nUDuMGTNMVvslzDhYouv0Dr3W5FXB8fZz72hUvFLAlEUucSyc+sGjcCFVLhIrGsH6rMK9/oFpx0VR4DVUF1RLnQhGuGrKGHUWvf+Z84tdylEQ8W8yGkHrVA8cIIR8idLjadrBqQ+/BpEbh4wvawtRdL2DrRLwJRP+KbICcU1iXUOBQeyB0n1Utd5ARHm6qjWnmwQSHgw2xIvMWtojlU='
     dbcp2:
       min-idle: 5
       initial-size: 5
@@ -64,7 +64,7 @@ spring:
     driver-class-name:  org.gjt.mm.mysql.Driver
     url: jdbc:mysql://localhost:3306/mldn8001
     username: root
-    password: '{cipher}123f11cede89feda27b62b5d4d951c95cdccd6d95b12f0cafb5a45e3b709ad03'
+    password: '{cipher}AQBW5yyn0xwU5ho0OZnMDQ/z7n8K8U2gNrjPivHdBV/Ki+QC+DzlB0mn6zDR1Raz+sfpcNrL2VzWtNPb1ts4ioqP4LmmPKM5sf+ZIUKHmNoslrSM4o6HvdhyFmoxRAsIiOXfiUxbB9FeICsIyxrcz2Go1JwElYfTX12yn5j1pZlvACl4nUDuMGTNMVvslzDhYouv0Dr3W5FXB8fZz72hUvFLAlEUucSyc+sGjcCFVLhIrGsH6rMK9/oFpx0VR4DVUF1RLnQhGuGrKGHUWvf+Z84tdylEQ8W8yGkHrVA8cIIR8idLjadrBqQ+/BpEbh4wvawtRdL2DrRLwJRP+KbICcU1iXUOBQeyB0n1Utd5ARHm6qjWnmwQSHgw2xIvMWtojlU='
     dbcp2:
       min-idle: 5
       initial-size: 5
