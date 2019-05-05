@@ -13,6 +13,11 @@ spring:
   profiles: beta
   application:
     name: microcloud-config-client 
+info:
+  app.name: mldn-microcloud-dev-1
+  company.name: www.mldn.cn
+  build.artifactId: $project.artifactId$
+  app.version: v-dev-1.0.0
 ---
 server:
   port: 8202
@@ -24,5 +29,9 @@ spring:
   profiles: dev
   application:
     name: microcloud-config-client
-      
+info:
+  app.name: mldn-microcloud-beta-1
+  company.name: www.mldn.cn
+  build.artifactId: $project.artifactId$
+  app.version: v-beta-1.0.0
     
