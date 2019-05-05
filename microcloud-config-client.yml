@@ -14,7 +14,7 @@ spring:
   application:
     name: microcloud-config-client 
 info:
-  app.name: mldn-microcloud-dev-1
+  app.name: mldn-microcloud-dev-2
   company.name: www.mldn.cn
   build.artifactId: $project.artifactId$
   app.version: v-dev-1.0.0
